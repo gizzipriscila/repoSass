@@ -1,0 +1,476 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+
+header{
+  height: 100px;
+  background: #e51791;
+  padding: 0 50px;
+  color: #242528;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.menu a{
+  color: #242528;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.mostrarMenu,
+.esconderMenu{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrarMenu{
+  order: 1;
+}
+
+.menu a:hover,
+.mostrarMenu:hover,
+.esconderMenu:hover{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#check{
+  display: none;
+}
+
+/* BANNER */
+#banner{
+  padding: 0 50px;
+  background-image:url(../media/hojas.jpg);
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 90px;
+  
+}
+.contenidoBanner{
+  position: relative;
+  color: #242528;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenidoBanner h3{
+  
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 10px 0;
+
+}
+.contenidoBanner h3 span{
+  font-weight: 600;
+}
+.botonNosotros{
+  text-decoration: none;
+  color: #242528;
+  border: 1px solid #e51791;
+  padding: 20px 40px;
+  align-self: baseline;
+  transition: all o.4s;
+}
+.botonNosotros:hover{
+  background: #e5179070;
+}
+/* SECCION MATERIALES */
+
+.materiales{
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.materiales img{
+  border-radius: 100%;
+}
+.materiales div{
+  padding: 30px 30px;
+}
+.materiales div h4{
+  color:#242528;
+  font-size: 1.3rem;
+  margin: 15px 0px;
+}
+.materiales div p{
+  color:#242528;
+  font-size: 1.2rem;
+}
+.saberMas{
+  display: inline-block;
+  text-decoration: none;
+  color:#59b328;
+  padding: 10px 30px;
+  border: 3px solid #59b328;
+  margin-top: 15px;
+  transition: all 0.4s;
+
+}
+.saberMas:hover{
+  background: #59b328;
+  color: #242528;
+}
+/* ICONOS */
+.iconos{
+  padding: 0px 50px; 
+}
+
+.contenidoIconos{
+  padding: 50px 50px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 90px;
+  background: #6a3093;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.contenidoIconos div{
+  flex: 1;
+  margin: 20px 0px ;
+  
+}
+.contenidoIconos div i{
+  color: #242528;
+  
+}
+.contenidoIconos div h6{
+  color: #242528;
+  font-size: 15px;
+  font-weight: 100;
+  margin: 10px 0px;
+  
+}
+/* FORMULARIO CONTACTO */
+.contacto{
+  background: #7d58fe;
+  padding: 50px 0px;
+  color: #242528;
+}
+.contacto h4{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.contacto form{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.datosForm{
+  display: flex;
+}
+.datosForm div{
+  padding: 10px;
+  flex: 1;
+}
+form label{
+  display: block;
+  margin-bottom: 10px;
+}
+form input,
+form textarea{
+  background: #7d58fe;
+  border: 2px solid #59b328;
+  padding: 10px 5px;
+  outline: 0;
+  color: #242528;
+  width: 100%;
+}
+form input::placeholder,
+form textarea::placeholder{
+  color: #242528;
+
+}
+.mensaje{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+/* FOOTER */
+footer{
+  background: #e51791;
+  color:#242528;
+  text-align: left;
+  padding: 30px 0px;
+}
+footer div{
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  flex: 1;
+  margin: 20px 0px;
+}
+footer div h3{
+  margin-left: 15px;
+}
+/* FOTOS */
+.menuFotos .fotos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.menuFotos article{
+  margin: 15px;
+}
+.menuFotos img{
+  width: 100%;
+  max-width: 280px;
+  padding: 10px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.8);
+  
+}
+/* PORTFOLIO HOME */
+.contenedor{
+  padding: 60px 0;
+  width: 90%;
+  margin: 1000px;
+  max-width: auto;
+}
+.contenidoPortfolio h2{
+  font-size: 2rem;
+  color: #a044ff;
+
+}
+.tituloPort{
+  color: #7d58fe;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.portfolio{
+  background: #f2f2f2;
+  margin-bottom: 90px;
+
+}
+.galeriaPort{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imagenPort{
+  width: 24%;
+  height: 200px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+.imagenPort > i{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+}
+.hoverGaleria{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  background: hsla(273, 91%, 27%, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hoverGaleria img{
+  width: 50%;
+}
+.hoverGaleria p{
+  color: #242528;
+  font-weight: bold;
+}
+.imagenPort:hover .hoverGaleria{
+  transform: scale(1);
+}
+
+.inspiracion .inspoImg{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.inspiracion{
+  background: #a044ff;
+}
+/* NOSOTROS */
+.nosotrosTxt{
+  font-weight: bolder;
+  font-size: 1.3rem;
+  width: 20%;
+  height: 50%;
+  text-align: center;
+
+}
+
+.nosotrosEst{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+/* ERROR 404 */
+.error{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: #7d58fe;
+  padding: 50px 0px;
+  color: #242528;
+  height: 500px;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+/* SECCION COMPOST */
+
+.blog .compost{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  
+}
+
+
+.blog article{
+  margin: 15px;
+}
+
+.blog img{
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 768px) {
+  /*HEADER*/
+  .mostrarMenu,
+  .esconderMenu{
+      display: block;
+  }
+  .menu{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #59b328;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 100px 0px;
+      z-index: 100;
+      transition: 0.8s;
+  
+  }
+  
+  .menu a{
+      display: block;
+      padding: 20px;
+  }
+  
+  .esconderMenu{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      
+  }
+  #check:checked ~ .menu{
+      right: 0;
+  }
+  /* MATERIALES */
+  .materiales{
+      flex-direction: column;
+  }
+  /* ICONOS */
+  .contenidoIconos{
+      flex-direction: column;
+  }
+  /* FORMULARIO */
+  .datosForm{
+      flex-direction: column;
+
+  }
+  /* FOOTER */
+  footer div{
+      flex-direction: column;
+  }
+  /* FOTOS */
+  .menuFotos{
+      flex-direction: column;
+  }
+  /* PORTFOLIO */
+  .galeriaPort{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  /* INSPIRACION HOME */
+  .inspoImg{
+     flex-direction: column;
+  }
+  .imagenPort{
+      width: 50%;
+      height: 200px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  }    
+
+  /* NOSOTROS */
+  
+.nosotrosEst{
+ flex-wrap: wrap;
+
+}
+
+  
+}
+
+  
+ 
